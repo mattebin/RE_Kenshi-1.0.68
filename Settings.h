@@ -63,6 +63,8 @@ namespace Settings
 	void SetLogAudio(bool value);
 	bool GetEnableEmergencySaves();
 	void SetEnableEmergencySaves(bool value);
+	bool GetAlwaysReportCrashes();
+	void SetAlwaysReportCrashes(bool value);
 
 	const std::unordered_map<std::string, std::string> *GetFileOverrides();
 	std::vector<std::string> *GetModSoundBanks();

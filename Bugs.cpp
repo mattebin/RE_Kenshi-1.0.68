@@ -433,7 +433,7 @@ static void CreateCrashReportWindow()
 {
 	// drop 3/4 of crash dumps because I get literally thousands
 	// (prereleases always send dumps)
-	if (Version::IsPrerelease() == false && rand() % 4 != 0)
+	if (Settings::GetAlwaysReportCrashes() == false && Version::IsPrerelease() == false && rand() % 4 != 0)
 		return;
 
 	MSG  msg;

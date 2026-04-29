@@ -65,6 +65,7 @@ rapidjson::Document GenerateDefaultSettings()
     defaultSettings.AddMember("ProfileLoads", false, defaultSettings.GetAllocator());
     defaultSettings.AddMember("IgnoreHash", false, defaultSettings.GetAllocator());
     defaultSettings.AddMember("EnableEmergencySaves", true, defaultSettings.GetAllocator());
+    defaultSettings.AddMember("AlwaysReportCrashes", false, defaultSettings.GetAllocator());
     defaultSettings.AddMember("IncreaseMaxCameraDistance", false, defaultSettings.GetAllocator());
     rapidjson::Value gameSpeeds(rapidjson::kArrayType);
     std::vector<float> defaultGameSpeeds = GetDefaultGameSpeeds();
@@ -682,6 +683,17 @@ void Settings::SetEnableEmergencySaves(bool value)
 {
     SetSettingBool("EnableEmergencySaves", value);
 }
+
+bool Settings::GetAlwaysReportCrashes()
+{
+    return GetSettingBool("AlwaysReportCrashes");
+}
+
+void Settings::SetAlwaysReportCrashes(bool value)
+{
+    SetSettingBool("AlwaysReportCrashes", value);
+}
+
 
 void Settings::SetCheckUpdates(bool value)
 {
