@@ -1,0 +1,226 @@
+Recon48 BinDiff apply
+BinDiff DB: C:\Tools\bindiff\out\kenshi_x64_vs_kenshi_x64_1.0.65.BinDiff
+Files: [(1, 'kenshi_x64'), (2, 'kenshi_x64_1.0.65')]
+
+Promoted BINDIFF_EXACT: 3040
+Promoted BINDIFF_GOOD:  181
+Flagged for API:        283
+No match:               997
+Already HIGH:           1472
+
+Status breakdown:
+  BINDIFF_EXACT: 3040
+  VTABLE: 1133
+  INSIDE: 544
+  NEAR: 337
+  EXACT: 285
+  BINDIFF_GOOD: 181
+  RESOLVED: 141
+  ORDERED: 95
+  UNRESOLVED: 81
+  REFINED: 68
+  PROLOGUE: 54
+  RECOVERED: 11
+  PRED: 3
+
+Flagged-for-API entries (sim 0.5-0.85):
+  idx=19 AbstractMovementBase::?_NV_getPosition@AbstractMovementBase@@QEBAAEBVVector3@Ogre@@XZ rva65=0x664640 rva68=0x6650D0 sim=1.000 conf=0.622
+  idx=23 AbstractMovementBase::?_NV_pathOk@AbstractMovementBase@@QEBA_NXZ rva65=0x664650 rva68=0x6650E0 sim=1.000 conf=0.622
+  idx=24 AbstractMovementBase::?_NV_pathFailed@AbstractMovementBase@@QEBA_NXZ rva65=0x664660 rva68=0x6650F0 sim=1.000 conf=0.622
+  idx=26 AbstractMovementBase::?_NV_isDestinationReached@AbstractMovementBase@@QEBA_NXZ rva65=0x664670 rva68=0x665100 sim=1.000 conf=0.622
+  idx=88 ActivePlatoon::ActivePlatoon::getHasVendorList(); rva65=0x4FDEC0 rva68=0x413300 sim=1.000 conf=0.622
+  idx=89 ActivePlatoon::ActivePlatoon::getHasSpecialItemsList(); rva65=0x4FDED0 rva68=0x4272D0 sim=1.000 conf=0.622
+  idx=104 AnimalInventoryLayout::?_CONSTRUCTOR@AnimalInventoryLayout@@QEAAPEAV1@XZ rva65=0x155350 rva68=0x155220 sim=1.000 conf=0.062
+  idx=151 AppearanceBase::AppearanceBase::getBoneOrientation(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &); rva65=0x52AEB0 rva68=0x5C4570 sim=0.586 conf=0.818
+  idx=169 AppearanceBase::?_NV_isFlayed@AppearanceBase@@QEBA_NXZ rva65=0x544470 rva68=0x544F00 sim=1.000 conf=0.622
+  idx=170 AppearanceBase::?_NV_isBarefoot@AppearanceBase@@QEBA_NXZ rva65=0x544480 rva68=0x544F10 sim=1.000 conf=0.622
+  idx=198 AppearanceHuman::?_NV_isFlayed@AppearanceHuman@@QEBA_NXZ rva65=0x544620 rva68=0x5450B0 sim=1.000 conf=0.622
+  idx=199 AppearanceHuman::AppearanceHuman::updateProportions(); rva65=0x52DC30 rva68=0x52E6C0 sim=1.000 conf=0.611
+  idx=209 AppearanceManager::AppearanceManager::createAppearanceData(class GameData *); rva65=0x72C10 rva68=0x72C50 sim=1.000 conf=0.018
+  idx=210 AppearanceManager::AppearanceManager::cleanValidateAppearanceData(class GameData *); rva65=0x765A0 rva68=0x765E0 sim=1.000 conf=0.365
+  idx=244 AppearanceManager::AppearanceManager::loadEditorXMLData(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, class GameData *); rva65=0x77050 rva68=0x77090 sim=1.000 conf=0.476
+  idx=266 AppearanceManager_AppearanceData::?_CONSTRUCTOR@AppearanceData@AppearanceManager@@QEAAPEAV12@AEBV12@@Z rva65=0xB52A0 rva68=0xB52E0 sim=1.000 conf=0.189
+  idx=273 AppearanceManager_DataCategory::AppearanceManager::DataCategory::setValue(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &); rva65=0x6F160 rva68=0x6F1A0 sim=1.000 conf=0.090
+  idx=274 AppearanceManager_DataCategory::AppearanceManager::DataCategory::getValue(); rva65=0x6E070 rva68=0x6E0B0 sim=1.000 conf=0.622
+  idx=290 AppearanceManager_DataRangeVector::AppearanceManager::DataRangeVector::size(); rva65=0x6E570 rva68=0x6E5B0 sim=1.000 conf=0.622
+  idx=298 AppearanceManager_Gender::?_CONSTRUCTOR@Gender@AppearanceManager@@QEAAPEAV12@W4Enum@12@@Z rva65=0x6E0A0 rva68=0x6E0E0 sim=1.000 conf=0.622
+  idx=303 Armour::?_NV_getClassType@Armour@@QEBA?AW4itemType@@XZ rva65=0x8A8D10 rva68=0x8A9BE0 sim=1.000 conf=0.622
+  idx=305 Armour::?_NV_getItemWeight@Armour@@QEBAMXZ rva65=0x8A8D30 rva68=0x8A9C00 sim=1.000 conf=0.622
+  idx=348 BountyManager::BountyManager::getBountyForCrime(enum CrimeEnum); rva65=0x850F70 rva68=0x851E40 sim=1.000 conf=0.475
+  idx=403 Building::?_NV_isBroken@Building@@QEBA_NXZ rva65=0x57B160 rva68=0x57BBF0 sim=1.000 conf=0.622
+  idx=406 Building::?_NV_isPowerOn@Building@@QEBA_NXZ rva65=0x2ADB00 rva68=0x2ADB40 sim=1.000 conf=0.622
+  idx=408 Building::?_NV_isDestroyed@Building@@QEBA_NXZ rva65=0xF6B50 rva68=0xF6B90 sim=1.000 conf=0.622
+  idx=413 Building::?_NV_getReachRange@Building@@QEBAMXZ rva65=0x57B180 rva68=0x57BC10 sim=1.000 conf=0.622
+  idx=415 Building::?_NV_getBuildingClass@Building@@QEBA?AW4BuildingClassType@@XZ rva65=0xF6B60 rva68=0xF6BA0 sim=1.000 conf=0.622
+  idx=465 Building::?_NV_hasDoorLock@Building@@QEBA_NXZ rva65=0x57B190 rva68=0x57BC20 sim=1.000 conf=0.622
+  idx=470 Building::?_NV_getAABB@Building@@QEBAAEBUAabb@Ogre@@XZ rva65=0x5468F0 rva68=0x547380 sim=1.000 conf=0.622
+  idx=471 Building::Building::setAABB(const struct Ogre::Aabb &); rva65=0x546960 rva68=0x5473F0 sim=1.000 conf=0.622
+  idx=486 Building::?_NV_getMountedBuilding@Building@@QEBAAEBVhand@@XZ rva65=0xF6C80 rva68=0xF6CC0 sim=1.000 conf=0.622
+  idx=563 BuildInventoryLayout::?_CONSTRUCTOR@BuildInventoryLayout@@QEAAPEAV1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HH_N@Z rva65=0x1560C0 rva68=0x155F90 sim=1.000 conf=0.645
+  idx=573 BuildModeWindow::?_CONSTRUCTOR@BuildModeWindow@@QEAAPEAV1@PEAVPlayerBuildMode@@_N@Z rva65=0x4E4780 rva68=0x4E5210 sim=1.000 conf=0.315
+  idx=590 BuildModeWindow::BuildModeWindow::showBuildingStats(); rva65=0x4DE9C0 rva68=0x4DF450 sim=1.000 conf=0.689
+  idx=630 CameraClass::CameraClass::updateFreeCamera(); rva65=0x6B10E0 rva68=0x6B0960 sim=0.669 conf=0.876
+  idx=645 Character::?_NV_getHPMultiplier@Character@@QEBAMXZ rva65=0x5E4EB0 rva68=0x5E5940 sim=1.000 conf=0.622
+  idx=655 Character::?_NV_getDataType@Character@@QEBA?AW4itemType@@XZ rva65=0x5E1420 rva68=0x5E1EB0 sim=1.000 conf=0.622
+  idx=674 Character::?_NV_getFormation@Character@@QEBAPEAVFormation@@XZ rva65=0x5C8E50 rva68=0x5C98E0 sim=1.000 conf=0.622
+  idx=675 Character::?_NV_getEnemyFormation@Character@@QEBAPEAVFormation@@XZ rva65=0x5C8E70 rva68=0x5C9900 sim=1.000 conf=0.622
+  idx=707 Character::Character::getCurrentWeatherAffectStrength(); rva65=0x5C7C50 rva68=0x5C86E0 sim=1.000 conf=0.622
+  idx=723 Character::?_NV_getMovementSpeedOrders@Character@@QEBA?AW4MoveSpeed@@XZ rva65=0x5C7980 rva68=0x5C8410 sim=1.000 conf=0.622
+  idx=728 Character::Character::switchLights(bool); rva65=0x52C270 rva68=0x52CD00 sim=1.000 conf=0.622
+  idx=747 Character::?_NV_getInventory@Character@@QEBAPEAVInventory@@XZ rva65=0x5E1450 rva68=0x5E1EE0 sim=1.000 conf=0.622
+  idx=749 Character::Character::isATrader(); rva65=0x5CF4E0 rva68=0x125D0F0 sim=0.599 conf=0.622
+  idx=769 Character::Character::updateGUIStatsDetails(class DatapanelGUI *, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, int); rva65=0x8B0380 rva68=0x8B1250 sim=1.000 conf=0.022
+  idx=773 Character::Character::removeJob(enum TaskType); rva65=0x5C8420 rva68=0x5C8EB0 sim=1.000 conf=0.622
+  idx=776 Character::Character::movePermajob(int, int); rva65=0x5C8530 rva68=0x5C8FC0 sim=1.000 conf=0.622
+  idx=787 Character::?_NV_canGoIndoors@Character@@QEBA_NPEAVBuilding@@@Z rva65=0x5E4ED0 rva68=0x5E5960 sim=1.000 conf=0.622
+  idx=789 Character::?_NV_isStandingOnBuilding@Character@@QEBAAEBVhand@@XZ rva65=0x5C7C90 rva68=0x5C8720 sim=1.000 conf=0.622
+  idx=810 Character::?_NV_isCrippled@Character@@QEBA_NXZ rva65=0x5E1460 rva68=0x5E1EF0 sim=1.000 conf=0.622
+  idx=811 Character::?_NV_getProneState@Character@@QEBA?AW4ProneState@@XZ rva65=0x5C7380 rva68=0x5C7E10 sim=1.000 conf=0.622
+  idx=821 Character::Character::sendDialogEventOverride(class Character *, enum EventTriggerEnum, bool); rva65=0x684CA0 rva68=0x125D180 sim=0.599 conf=0.622
+  idx=824 Character::Character::hasDialogue(); rva65=0x67A170 rva68=0x125D170 sim=0.599 conf=0.622
+  idx=836 Character::Character::attackingYou(class Character *, bool, bool); rva65=0x5C8800 rva68=0x125D0E0 sim=0.599 conf=0.622
+  idx=847 Character::?_NV_getAge@Character@@QEBAMXZ rva65=0x5E4EF0 rva68=0x5E5980 sim=1.000 conf=0.622
+  idx=848 Character::?_NV_getAge0to1@Character@@QEBAMXZ rva65=0x5E4F00 rva68=0x5E5990 sim=1.000 conf=0.622
+  idx=850 Character::?_NV_getAgeInverse@Character@@QEBAMXZ rva65=0x5E4F10 rva68=0x5E59A0 sim=1.000 conf=0.622
+  idx=853 Character::Character::getCombatClass(); rva65=0x5C8820 rva68=0x5C92B0 sim=1.000 conf=0.622
+  idx=880 Character::?_NV_getRace@Character@@QEBAPEAVRaceData@@XZ rva65=0x5E1470 rva68=0x5E1F00 sim=1.000 conf=0.622
+  idx=913 Character::?_NV_isHeadShaven@Character@@QEBA_NXZ rva65=0x5E1490 rva68=0x5E1F20 sim=1.000 conf=0.622
+  idx=920 Character::Character::isDead(); rva65=0x620B20 rva68=0x6215B0 sim=1.000 conf=0.622
+  idx=929 Character::?_NV_getDefaultTaskRepertoireEnum@Character@@QEBAIXZ rva65=0x5E4F20 rva68=0x5E59B0 sim=1.000 conf=0.622
+  idx=969 Character_AttachedArrowManager::Character::AttachedArrowManager::updateStart(); rva65=0x5C7890 rva68=0x5C8320 sim=1.000 conf=0.622
+  idx=991 CharacterAnimal::?_NV_getAge0to1@CharacterAnimal@@QEBAMXZ rva65=0x5E1580 rva68=0x5E2010 sim=1.000 conf=0.622
+  idx=992 CharacterAnimal::?_NV_getDefaultTaskRepertoireEnum@CharacterAnimal@@QEBAIXZ rva65=0x5E1590 rva68=0x5E2020 sim=1.000 conf=0.622
+  idx=994 CharacterAnimal::?_NV_getSmellHuntingThresholdBlood@CharacterAnimal@@QEBAMXZ rva65=0x5E15A0 rva68=0x5E2030 sim=1.000 conf=0.622
+  idx=995 CharacterAnimal::?_NV_getSmellHuntingThresholdEggs@CharacterAnimal@@QEBAMXZ rva65=0x5E15B0 rva68=0x5E2040 sim=1.000 conf=0.622
+  idx=996 CharacterAnimal::?_NV_getHPMultiplier@CharacterAnimal@@QEBAMXZ rva65=0x5E15C0 rva68=0x5E2050 sim=1.000 conf=0.622
+  idx=1043 CharacterEditWindow::CharacterEditWindow::setupUI(); rva65=0x5F0FB0 rva68=0x5F1A40 sim=1.000 conf=0.045
+  idx=1079 CharacterInventoryLayout::?_CONSTRUCTOR@CharacterInventoryLayout@@QEAAPEAV1@XZ rva65=0x153A10 rva68=0x1538E0 sim=1.000 conf=0.018
+  idx=1082 CharacterStatsWindow::?_CONSTRUCTOR@CharacterStatsWindow@@QEAAPEAV1@AEBVhand@@@Z rva65=0x8B9830 rva68=0x8BA700 sim=1.000 conf=0.108
+  idx=1088 CharacterStatsWindow::?_NV_isVisible@CharacterStatsWindow@@QEBA_NXZ rva65=0x8A9450 rva68=0x125D320 sim=0.542 conf=0.622
+  idx=1090 CharacterStatsWindow::CharacterStatsWindow::setAutoUpdateMode(bool); rva65=0x8A9470 rva68=0x8AA340 sim=1.000 conf=0.622
+  idx=1101 CharacterStatsWindow::CharacterStatsWindow::BuildStats(); rva65=0x8AAA80 rva68=0x8AB950 sim=1.000 conf=0.024
+  idx=1115 CharBody::CharBody::periodicUpdate(float); rva65=0x5C5D30 rva68=0x5C67C0 sim=1.000 conf=0.622
+  idx=1126 CharBody::?_NV_isCharacter@CharBody@@QEBA_NXZ rva65=0x620630 rva68=0x6210C0 sim=1.000 conf=0.622
+  idx=1136 CharBody::CharBody::getFaction(); rva65=0x5C5FB0 rva68=0x5C6A40 sim=1.000 conf=0.622
+  idx=1149 CharMovement::CharMovement::formationUpdateCallback(const class Ogre::Vector3 &, const class hand &, const class Ogre::Vector3 &, class Formation *); rva65=0x2AE4C0 rva68=0x2AE500 sim=1.000 conf=0.622
+  idx=1157 CharMovement::CharMovement::postAnimationUpdate(); rva65=0x65D7A0 rva68=0x65E230 sim=1.000 conf=0.622
+  idx=1160 CharMovement::CharMovement::getMaximumPossibleMovement(); rva65=0x65D750 rva68=0x65E1E0 sim=1.000 conf=0.622
+  idx=1210 CharStats::CharStats::updateStats(class GameData *); rva65=0x64AC10 rva68=0x64B6A0 sim=1.000 conf=0.093
+  idx=1218 CharStats::CharStats::getGUIDataForMainInfo(class DatapanelGUI *, int, bool); rva65=0x891250 rva68=0x892120 sim=1.000 conf=0.307
+  idx=1227 CharStats::CharStats::getStat(enum StatsEnumerated, bool); rva65=0x883BF0 rva68=0x884AC0 sim=1.000 conf=0.257
+  idx=1228 CharStats::CharStats::getStatName(enum StatsEnumerated); rva65=0x887570 rva68=0x888440 sim=1.000 conf=0.011
+  idx=1237 CharStats::?_NV_strengthBase@CharStats@@QEBAMXZ rva65=0x6409F0 rva68=0x641480 sim=1.000 conf=0.622
+  idx=1266 CharStats::CharStats::calculateStumbleBlockTimer(float); rva65=0x8853E0 rva68=0x8862B0 sim=1.000 conf=0.622
+  idx=1268 CharStats::CharStats::calculateTechniqueInegrityCheckTimer(); rva65=0x8853F0 rva68=0x8862C0 sim=1.000 conf=0.622
+  idx=1274 CharStats::CharStats::getAttackBleedDamageMult(); rva65=0x882D80 rva68=0x883C50 sim=1.000 conf=0.622
+  idx=1277 CharStats::?_NV_getEquippedWeaponSkill@CharStats@@QEBAMXZ rva65=0x8A7CE0 rva68=0x8A8BB0 sim=1.000 conf=0.622
+  idx=1328 CombatClass::?_NV_isAI@CombatClass@@QEBA_NXZ rva65=0x60BA60 rva68=0x60C4F0 sim=1.000 conf=0.622
+  idx=1339 CombatClass::CombatClass::isStationary(); rva65=0x664970 rva68=0x665400 sim=1.000 conf=0.622
+  idx=1359 CombatClass::CombatClass::setup(); rva65=0x6078E0 rva68=0x125D120 sim=1.000 conf=0.622
+  idx=1363 CombatClass::CombatClass::shiftEffects(const class Ogre::Vector3 &); rva65=0x607920 rva68=0x6083B0 sim=1.000 conf=0.622
+  idx=1402 CombatClass_AttackSlotManager::CombatClass::AttackSlotManager::update(); rva65=0x664B80 rva68=0x665610 sim=1.000 conf=0.622
+  idx=1424 CombatMovementController::CombatMovementController::getGUIData(class DatapanelGUI *, int); rva65=0x798930 rva68=0x7994D0 sim=1.000 conf=0.506
+  idx=1428 CombatMovementController::?_DESTRUCTOR@CombatMovementController@@QEAAXXZ rva65=0x664230 rva68=0x664CC0 sim=1.000 conf=0.555
+  idx=1429 CombatTechniqueData::?_CONSTRUCTOR@CombatTechniqueData@@QEAAPEAV1@PEAVGameData@@@Z rva65=0x667A30 rva68=0x6684C0 sim=1.000 conf=0.345
+  idx=1434 ContainerItem::?_NV_getClassType@ContainerItem@@QEBA?AW4itemType@@XZ rva65=0x76B310 rva68=0x76BE50 sim=1.000 conf=0.622
+  idx=1443 ContainerItem::?_NV_getInventory@ContainerItem@@QEBAPEAVInventory@@XZ rva65=0x76B320 rva68=0x76BE60 sim=1.000 conf=0.622
+  idx=1452 ContainerItem::?_CONSTRUCTOR@ContainerItem@@QEAAPEAV1@PEAVGameData@@0Vhand@@@Z rva65=0x762CD0 rva68=0x763810 sim=1.000 conf=0.274
+  idx=1459 ContextMenuGUI::?_CONSTRUCTOR@ContextMenuGUI@@QEAAPEAV1@XZ rva65=0x796C00 rva68=0x7977A0 sim=1.000 conf=0.485
+  idx=1506 CraftingInventoryLayout::CraftingInventoryLayout::getQueueButton(); rva65=0x14DD70 rva68=0x14DDB0 sim=1.000 conf=0.622
+  idx=1510 Crossbow::?_NV_getClassType@Crossbow@@QEBA?AW4itemType@@XZ rva65=0x8A92C0 rva68=0x8AA190 sim=1.000 conf=0.622
+  idx=1513 Crossbow::Crossbow::getRangeInUnits(); rva65=0x434AE0 rva68=0x434E80 sim=1.000 conf=0.622
+  idx=1526 Damages::?_DESTRUCTOR@Damages@@QEAAXXZ rva65=0x2A9FA0 rva68=0x257CC0 sim=1.000 conf=0.622
+  idx=1579 DatapanelGUI::?_NV_getCurrentCategory@DatapanelGUI@@QEBAHXZ rva65=0x70BD80 rva68=0x70C950 sim=1.000 conf=0.622
+  idx=1646 DataPanelLine_DropBox::?_NV_updateValuePtr@DataPanelLine_DropBox@@QEAAXPEAX@Z rva65=0x6F59C0 rva68=0x6F6590 sim=1.000 conf=0.622
+  idx=1676 DataPanelLine_Slider::?_NV_updateValuePtr@DataPanelLine_Slider@@QEAAXPEAX@Z rva65=0x6F5B80 rva68=0x6F6750 sim=1.000 conf=0.622
+  idx=1685 DataPanelLine_SliderEditable::?_NV_updateValuePtr@DataPanelLine_SliderEditable@@QEAAXPEAX@Z rva65=0x6F58A0 rva68=0x6F6470 sim=1.000 conf=0.622
+  idx=1747 Dialogue::Dialogue::insertWordSwaps(class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, class Character *, bool, class DialogLineData *); rva65=0x67DE20 rva68=0x67E8B0 sim=1.000 conf=0.018
+  idx=1757 Dialogue::Dialogue::needsDialogAssessmentUpdate(); rva65=0x670E90 rva68=0x671920 sim=1.000 conf=0.622
+  idx=1823 DialogueSpeechBubble::DialogueSpeechBubble::setAlpha(float); rva65=0x721670 rva68=0x125D220 sim=0.542 conf=0.622
+  idx=1827 DialogueSpeechBubble::DialogueSpeechBubble::getAlpha(); rva65=0x7217C0 rva68=0x125D230 sim=0.542 conf=0.622
+  idx=1829 DialogueWindow::DialogueWindow::getVisible(); rva65=0x721390 rva68=0x125D200 sim=0.542 conf=0.622
+  idx=1834 DialogueWindow::?_NV_isVisible@DialogueWindow@@QEBA_NXZ rva65=0x721490 rva68=0x125D210 sim=0.542 conf=0.622
+  idx=1842 DialogueWindow::?_CONSTRUCTOR@DialogueWindow@@QEAAPEAV1@XZ rva65=0x724C10 rva68=0x725740 sim=1.000 conf=0.517
+  idx=1869 DoorStuff::?_NV_isBroken@DoorStuff@@QEBA_NXZ rva65=0x2ADC50 rva68=0x2ADC90 sim=1.000 conf=0.622
+  idx=1901 Faction::Faction::getProsperityMultiplier(); rva65=0x2DD4F0 rva68=0x2DD530 sim=1.000 conf=0.622
+  idx=1907 Faction::Faction::resetPlatoonID(); rva65=0x7F1B90 rva68=0x7F2730 sim=1.000 conf=0.622
+  idx=1963 Faction::Faction::spawnSquadMissionsUpdate(); rva65=0x2DD4E0 rva68=0x2DD520 sim=1.000 conf=0.622
+  idx=2031 FactionsScreen::?_CONSTRUCTOR@FactionsScreen@@QEAAPEAV1@PEAVManagementScreen@@@Z rva65=0x493550 rva68=0x493FE0 sim=1.000 conf=0.158
+  idx=2094 FarmBuilding::?_CONSTRUCTOR@FarmBuilding@@QEAAPEAV1@PEAVGameData@@AEBVVector3@Ogre@@AEBVQuaternion@4@PEAVFaction@@AEBVhand@@4PEAVLayout@@PEAVBuilding@@@Z rva65=0xE83E0 rva68=0xE8420 sim=1.000 conf=0.438
+  idx=2193 FoliageSystem_EntData::?_CONSTRUCTOR@EntData@FoliageSystem@@QEAAPEAV12@PEAVGameData@@_N0@Z rva65=0x6CDE10 rva68=0x6CE160 sim=1.000 conf=0.198
+  idx=2202 FoliageSystem_TreeData::?_DESTRUCTOR@TreeData@FoliageSystem@@QEAAXXZ rva65=0x6D85C0 rva68=0x51A740 sim=1.000 conf=0.622
+  idx=2225 ForgottenGUI::ForgottenGUI::messageBox(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, int, bool, class MyGUI::delegates::IDelegate1<int> *); rva65=0x741600 rva68=0x742130 sim=1.000 conf=0.476
+  idx=2226 ForgottenGUI::ForgottenGUI::hideMessageBox(bool); rva65=0x73F0B0 rva68=0x73FBE0 sim=1.000 conf=0.622
+  idx=2227 ForgottenGUI::ForgottenGUI::hasModalMessage(); rva65=0x73F0C0 rva68=0x556240 sim=1.000 conf=0.622
+  idx=2230 ForgottenGUI::ForgottenGUI::getInDialogue(); rva65=0x6E1C80 rva68=0x125D1B0 sim=0.599 conf=0.622
+  idx=2231 ForgottenGUI::ForgottenGUI::getToolTip(); rva65=0x6E1C90 rva68=0x6E1FE0 sim=1.000 conf=0.622
+  idx=2251 ForgottenGUI::ForgottenGUI::closeTradeWindow(); rva65=0x790CF0 rva68=0x791890 sim=1.000 conf=0.622
+  idx=2262 ForgottenGUI::ForgottenGUI::getNumOpenInventoryWindows(); rva65=0x6E2AA0 rva68=0x6E2DF0 sim=1.000 conf=0.622
+  idx=2275 ForgottenGUI::ForgottenGUI::destroyWidget(class MyGUI::Widget *); rva65=0x6E1CA0 rva68=0x125D1C0 sim=0.542 conf=0.622
+  idx=2276 ForgottenGUI::ForgottenGUI::destroyWidgets(class MyGUI::Enumerator<std::vector<MyGUI::Widget *,std::allocator<MyGUI::Widget *> > > &); rva65=0x6E1CE0 rva68=0x125D1D0 sim=0.542 conf=0.622
+  idx=2279 ForgottenGUI::ForgottenGUI::setup(class Ogre::Root *, class Ogre::RenderWindow *); rva65=0x6EAC00 rva68=0x6EB3A0 sim=1.000 conf=0.060
+  idx=2323 FormationMover::?_DESTRUCTOR@FormationMover@@QEAAXXZ rva65=0x663B90 rva68=0x664620 sim=1.000 conf=0.622
+  idx=2447 GameDataEditorWindow::GameDataEditorWindow::initDataValues(); rva65=0x669ED0 rva68=0x66A960 sim=1.000 conf=0.212
+  idx=2478 GameLauncher::?_NV_GetMessageMap@GameLauncher@@QEBAPEBUAFX_MSGMAP@@XZ rva65=0x12A110 rva68=0x12A150 sim=1.000 conf=0.622
+  idx=2492 GameLauncher_TabChangelog::?_NV_GetMessageMap@TabChangelog@GameLauncher@@QEBAPEBUAFX_MSGMAP@@XZ rva65=0x1209D0 rva68=0x120A10 sim=1.000 conf=0.622
+  idx=2520 GameLauncher_TabVideo::?_NV_GetMessageMap@TabVideo@GameLauncher@@QEBAPEBUAFX_MSGMAP@@XZ rva65=0x12A280 rva68=0x12A2C0 sim=1.000 conf=0.622
+  idx=2551 GameplayOptions::GameplayOptions::getStarvationTimeInHours(); rva65=0x3E74E0 rva68=0x3E7620 sim=1.000 conf=0.622
+  idx=2581 GameWorld::GameWorld::dailyUpdates(); rva65=0x785DC0 rva68=0x786900 sim=1.000 conf=0.622
+  idx=2598 GameWorld::GameWorld::allThreadQueuesAreClear(); rva65=0x7AD570 rva68=0x125D2C0 sim=0.599 conf=0.622
+  idx=2602 GameWorld::GameWorld::getAllModsList(); rva65=0x867A50 rva68=0x868920 sim=1.000 conf=0.622
+  idx=2632 GameWorld::GameWorld::showPlayerAMessage(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, bool); rva65=0x723ED0 rva68=0x125D250 sim=0.599 conf=0.622
+  idx=2633 GameWorld::GameWorld::showPlayerAMessageD(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, bool); rva65=0x720790 rva68=0x7212C0 sim=1.000 conf=0.622
+  idx=2641 GameWorld::GameWorld::removePortaitUpdate(const class hand &); rva65=0x786A60 rva68=0x7875A0 sim=1.000 conf=0.622
+  idx=2663 GameWorld::GameWorld::getLengthOfHourInRealSeconds(); rva65=0x66C960 rva68=0x66D3F0 sim=1.000 conf=0.622
+  idx=2682 Gear::?_NV_getLevel01@Gear@@QEBAMXZ rva65=0xD3170 rva68=0xD31B0 sim=1.000 conf=0.622
+  idx=2683 Gear::?_NV_getLevel@Gear@@QEBAHXZ rva65=0xD3180 rva68=0xD31C0 sim=1.000 conf=0.622
+  idx=2703 GlobalConstants::GlobalConstants::setup(class GameData *); rva65=0x86A3E0 rva68=0x86B2B0 sim=1.000 conf=0.023
+  idx=2710 GUIWindow::?_NV_getHeight@GUIWindow@@QEBAHXZ rva65=0x6E20E0 rva68=0x6E2430 sim=1.000 conf=0.622
+  idx=2716 GUIWindow::GUIWindow::getWidget(); rva65=0x6E21C0 rva68=0x6E2510 sim=1.000 conf=0.622
+  idx=2751 HavokCharacter::HavokCharacter::operator delete(void *); rva65=0x663BF0 rva68=0x4FE960 sim=1.000 conf=0.622
+  idx=2952 ImportGameMenu::?_CONSTRUCTOR@ImportGameMenu@@QEAAPEAV1@XZ rva65=0x4808C0 rva68=0x481130 sim=1.000 conf=0.362
+  idx=3003 InteriorModeButtonWindow::?_CONSTRUCTOR@InteriorModeButtonWindow@@QEAAPEAV1@XZ rva65=0x7796B0 rva68=0x77A1F0 sim=1.000 conf=0.313
+  idx=3127 InventoryGUI::?_NV_isVisible@InventoryGUI@@QEBA_NXZ rva65=0x70C1E0 rva68=0x70CDB0 sim=1.000 conf=0.622
+  idx=3129 InventoryGUI::InventoryGUI::refreshSection(); rva65=0x70C250 rva68=0x70CE20 sim=1.000 conf=0.622
+  idx=3142 InventoryGUI::InventoryGUI::stealingGUIInfoUpdate(); rva65=0x711D50 rva68=0x712920 sim=1.000 conf=0.148
+  idx=3189 InventoryGUI_TradeResult::InventoryGUI::TradeResult::showMessage(); rva65=0x70EC10 rva68=0x70F7E0 sim=1.000 conf=0.017
+  idx=3201 InventoryItemBase::InventoryItemBase::getStolenItemGUIInfo(class std::vector<StringPair,Ogre::STLAllocator<StringPair,Ogre::CategorisedAllocPolicy<0> > > &); rva65=0x7A0300 rva68=0x7A0EA0 sim=1.000 conf=0.609
+  idx=3204 InventoryItemBase::?_NV_getItemWeightSingle@InventoryItemBase@@QEBAMXZ rva65=0xD20E0 rva68=0xD2120 sim=1.000 conf=0.622
+  idx=3215 InventoryItemBase::?_NV_getInventory@InventoryItemBase@@QEBAPEAVInventory@@XZ rva65=0x768030 rva68=0x768B70 sim=1.000 conf=0.622
+  idx=3222 InventoryItemBase::?_NV_getLevel@InventoryItemBase@@QEBAHXZ rva65=0x768040 rva68=0x768B80 sim=1.000 conf=0.622
+  idx=3227 InventoryItemBase::InventoryItemBase::getTooltipTradeValue(class std::vector<StringPair,Ogre::STLAllocator<StringPair,Ogre::CategorisedAllocPolicy<0> > > &); rva65=0x79DC00 rva68=0x79E7A0 sim=1.000 conf=0.661
+  idx=3231 InventoryLayout::InventoryLayout::getWindow(); rva65=0x14DA20 rva68=0x14DA60 sim=1.000 conf=0.622
+  idx=3233 InventoryLayout::?_NV_getDatapanel@InventoryLayout@@QEBAPEAVDatapanelGUI@@XZ rva65=0x14DA30 rva68=0x14DA70 sim=1.000 conf=0.622
+  idx=3268 InventorySection::InventorySection::setWeightMultiplier(float); rva65=0x745350 rva68=0x745E90 sim=1.000 conf=0.622
+  idx=3291 InventorySectionGUI::InventorySectionGUI::getWidget(); rva65=0x70C0A0 rva68=0x70CC70 sim=1.000 conf=0.622
+  idx=3294 InventorySectionGUI::InventorySectionGUI::setEnabled(bool); rva65=0x70C0B0 rva68=0x70CC80 sim=1.000 conf=0.622
+  idx=3301 InventoryTraderGUI::?_NV_getCallbackObject@InventoryTraderGUI@@QEBAPEAVRootObject@@XZ rva65=0x70C990 rva68=0x70D560 sim=1.000 conf=0.622
+  idx=3305 Item::?_NV_getClassType@Item@@QEBA?AW4itemType@@XZ rva65=0xD2170 rva68=0xD21B0 sim=1.000 conf=0.622
+  idx=3320 Item::?_NV_getInventory@Item@@QEBAPEAVInventory@@XZ rva65=0xD2240 rva68=0xD2280 sim=1.000 conf=0.622
+  idx=3324 Item::?_NV_getTimeout@Item@@QEBA?AVTimeOfDay@@XZ rva65=0xD3140 rva68=0xD3180 sim=1.000 conf=0.622
+  idx=3333 Item::?_NV_getLevel@Item@@QEBAHXZ rva65=0xD22C0 rva68=0xD2300 sim=1.000 conf=0.622
+  idx=3369 LevelEditor::LevelEditor::levelEditMode(bool); rva65=0x77B350 rva68=0x77BE90 sim=1.000 conf=0.055
+  idx=3373 LevelEditor::LevelEditor::isBaseActive(); rva65=0x76B7E0 rva68=0x76C320 sim=1.000 conf=0.622
+  idx=3402 LevelEditor::LevelEditor::navmeshButton(class MyGUI::Widget *); rva65=0x772940 rva68=0x773480 sim=1.000 conf=0.213
+  idx=3450 LightBuilding::?_NV_getMountedBuilding@LightBuilding@@QEBAAEBVhand@@XZ rva65=0x57B3D0 rva68=0x57BE60 sim=1.000 conf=0.622
+  idx=3460 LoadingWindow::LoadingWindow::getVisible(); rva65=0x9124C0 rva68=0x125D360 sim=0.542 conf=0.622
+  idx=3479 LoadSaveWindow::LoadSaveWindow::updateInfo(unsigned __int64); rva65=0x47DF10 rva68=0x47E780 sim=1.000 conf=0.080
+  idx=3494 Logger::Logger::logMessageDebug(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &); rva65=0x17F5C0 rva68=0x17F600 sim=1.000 conf=0.622
+  idx=3496 MainBarGUI::?_CONSTRUCTOR@MainBarGUI@@QEAAPEAV1@XZ rva65=0x72C880 rva68=0x72D3B0 sim=1.000 conf=0.105
+  idx=3523 MainBarGUI::MainBarGUI::getPausePanel(); rva65=0x720420 rva68=0x720F50 sim=1.000 conf=0.622
+  idx=3524 MainBarGUI::MainBarGUI::getLoadingPanel(); rva65=0x720430 rva68=0x720F60 sim=1.000 conf=0.622
+  idx=3554 MainTabPortraitPlatoon::?_DESTRUCTOR@MainTabPortraitPlatoon@@QEAAXXZ rva65=0x417700 rva68=0x57B2E0 sim=1.000 conf=0.622
+  idx=3559 ManagementScreen::ManagementScreen::getVisible(); rva65=0x48B0E0 rva68=0x125D050 sim=0.542 conf=0.622
+  idx=3563 ManagementScreen::ManagementScreen::getCurrentTab(); rva65=0x48B100 rva68=0x125D060 sim=0.542 conf=0.622
+  idx=3578 ManagementScreen::ManagementScreen::refreshAI(); rva65=0x494250 rva68=0x494CE0 sim=1.000 conf=0.052
+  idx=3579 ManagementScreen::ManagementScreen::setCraftingBench(const class hand &); rva65=0x48B190 rva68=0x125D070 sim=0.599 conf=0.622
+  idx=3582 ManagementScreen::?_CONSTRUCTOR@ManagementScreen@@QEAAPEAV1@XZ rva65=0x49EB20 rva68=0x49F5B0 sim=1.000 conf=0.293
+  idx=3678 MedicalSystem::MedicalSystem::serialise(class GameData *); rva65=0x64DFC0 rva68=0x64EA50 sim=1.000 conf=0.077
+  idx=3722 MedicalSystem::MedicalSystem::getMedicalGUIData(class DatapanelGUI *); rva65=0x889A20 rva68=0x88A8F0 sim=1.000 conf=0.375
+  idx=3751 MedicalSystem_HealthPartStatus::MedicalSystem::HealthPartStatus::getWorstDamage(float); rva65=0x643600 rva68=0x644090 sim=1.000 conf=0.622
+  idx=3778 NavInstance::?_NV_isNavMeshSector@NavInstance@@QEBA_NXZ rva65=0x3B2EC0 rva68=0x3B3000 sim=1.000 conf=0.622
+  idx=3793 NavMesh::NavMesh::getClosestPoint(const class Ogre::Vector3 &, float, float, bool, class Ogre::Vector3 &, unsigned int &); rva65=0x3A2E60 rva68=0x3A2FA0 sim=1.000 conf=0.690
+  idx=3822 NavMesh::NavMesh::isGenerating(); rva65=0x3A1460 rva68=0x3A15A0 sim=1.000 conf=0.622
+  idx=3823 NavMesh::NavMesh::getSeedData(); rva65=0x3A1480 rva68=0x3A15C0 sim=1.000 conf=0.622
+  idx=3929 NewGameOptionsWindow::?_CONSTRUCTOR@NewGameOptionsWindow@@QEAAPEAV1@XZ rva65=0x914300 rva68=0x9151D0 sim=1.000 conf=0.073
+  idx=3931 NewGameOptionsWindow::NewGameOptionsWindow::setVisible(bool); rva65=0x912020 rva68=0x912EF0 sim=1.000 conf=0.622

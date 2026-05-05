@@ -1,3 +1,16 @@
+# RE_Kenshi-1.0.68 (fork)
+
+> **Fork note** — this is a fork of [BFrizzleFoShizzle/RE_Kenshi](https://github.com/BFrizzleFoShizzle/RE_Kenshi)
+> that adds a **Steam 1.0.68 RVA map** (5,973 functions, ~79.7%
+> high-confidence) so KenshiLib-based tooling can target the current
+> Kenshi build instead of only 1.0.65.
+>
+> **Everything new lives under [`1.0.68/`](1.0.68/)** — see
+> [`1.0.68/README.md`](1.0.68/README.md) for what's there and how it
+> was built. The rest of this repo is unchanged from upstream.
+
+---
+
 # RE_Kenshi
 This project uses Git submodules. To automatically clone submodules:  
 `git clone --recursive https://github.com/BFrizzleFoShizzle/RE_Kenshi.git`

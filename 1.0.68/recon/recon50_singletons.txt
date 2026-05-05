@@ -1,0 +1,5 @@
+Singleton globals (Recon50) — 1.0.68
+
+GameWorld             ctor=0x874E70  global=NOT_FOUND  (no .data write found in constructor)
+GlobalConstants       ctor=0x?  global=NOT_FOUND  (no constructor found in master CSV)
+OptionsHolder         ctor=0x?  global=NOT_FOUND  (constructor RVA is zero (UNRESOLVED))

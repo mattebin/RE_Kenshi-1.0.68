@@ -1,0 +1,81 @@
+Recon47 weak-map targeted fix
+Program: kenshi_x64.exe
+ImageBase: 0x140000000
+
+Applied fixes: 54
+Skipped fixes: 2
+
+594,BuildModeWindow,?changeFloorButtonDown@BuildModeWindow@@QEAAXPEAVWidget@MyGUI@@@Z,PROLOGUE 0x4D8680 -> 0x4D8680, bytes=40010000004883BD, recon38 BuildModeWindow::changeFloorButtonDown
+2573,GameWorld,?startUpThreads@GameWorld@@QEAA_NXZ,INSIDE 0x86B2B0 -> 0x86C520, bytes=837DB7107209488B, recon38 GameWorld::startUpThreads
+2575,GameWorld,?_DESTRUCTOR@GameWorld@@QEAAXXZ,INSIDE 0x86B2B0 -> 0x86C6C0, bytes=C745B70F0000004C, recon38 GameWorld::_DESTRUCTOR
+2576,GameWorld,?start@GameWorld@@QEAA_NPEAVRendererT@@@Z,UNRESOLVED 0x0 -> 0x8699D0, bytes=488B07488D55C848, recon38 GameWorld::start(RendererT*)
+2579,GameWorld,?initialisation@GameWorld@@QEAA_NXZ,INSIDE 0x86B2B0 -> 0x86CBF0, bytes=4EEB00488D4D9FE8, recon38 GameWorld::initialisation
+2583,GameWorld,?errorToLogReleaseMode@GameWorld@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z,PROLOGUE 0x7852E0 -> 0x7852E0, bytes=E903010000488D46, recon38 GameWorld::errorToLogReleaseMode
+2584,GameWorld,?errorD@GameWorld@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z,PROLOGUE 0x7852F0 -> 0x7852F0, bytes=C008EB03498BC648, recon38 GameWorld::errorD
+2585,GameWorld,?logToSave@GameWorld@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z,PROLOGUE 0x785300 -> 0x785300, bytes=4866C74424500000, recon38 GameWorld::logToSave
+2586,GameWorld,?log@GameWorld@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z,PROLOGUE 0x785310 -> 0x785310, bytes=8D4A38FF15BF2CAC, recon38 GameWorld::log
+2587,GameWorld,?logDebug@GameWorld@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z,PROLOGUE 0x785340 -> 0x785340, bytes=894330C644245001, recon38 GameWorld::logDebug(msg, logname)
+2588,GameWorld,?logDebug@GameWorld@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z,PROLOGUE 0x785330 -> 0x785330, bytes=8943104889431848, recon38 GameWorld::logDebug(msg)
+2590,GameWorld,?destroy@GameWorld@@QEAAXPEAVAttachedEntity@@@Z,PROLOGUE 0x799AE0 -> 0x799AE0, bytes=5D415C5F5E5DC3CC, recon38 GameWorld::destroy(AttachedEntity*)
+2591,GameWorld,?destroy@GameWorld@@QEAAXPEAVTownBuildingsManager@@@Z,PROLOGUE 0x799BF0 -> 0x799BF0, bytes=9408000041399690, recon38 GameWorld::destroy(TownBuildingsManager*)
+2592,GameWorld,?destroy@GameWorld@@QEAAXPEAVNestBatcher@@@Z,PROLOGUE 0x794890 -> 0x794890, bytes=004533C9488BD645, recon38 GameWorld::destroy(NestBatcher*)
+2593,GameWorld,?destroy@GameWorld@@QEAA_NPEAVRootObject@@_NPEBD@Z,PROLOGUE 0x798E90 -> 0x798E90, bytes=B6D04533C0488D4D, recon38 GameWorld::destroy(RootObject*, bool, char const*)
+2596,GameWorld,?flushKillList@GameWorld@@QEAAXXZ,PROLOGUE 0x7A8200 -> 0x7A8200, bytes=74EE80781D00480F, recon38 GameWorld::flushKillList
+2599,GameWorld,?initBaseMods@GameWorld@@QEAAXXZ,PROLOGUE 0x869B90 -> 0x869B90, bytes=3C7EFF90488D55C8, recon38 GameWorld::initBaseMods
+2630,GameWorld,?hideContextMenu@GameWorld@@QEAAXXZ,PROLOGUE 0x7A7290 -> 0x7A7290, bytes=FF4885C00F84E500, recon38 GameWorld::hideContextMenu
+2642,GameWorld,?processSysMessages@GameWorld@@QEAAXXZ,PROLOGUE 0x7B5950 -> 0x7B5950, bytes=18C64508004D8BCF, recon38 GameWorld::processSysMessages
+2655,GameWorld,?processUpdateRemovalList@GameWorld@@QEAAXXZ,PROLOGUE 0x7948C0 -> 0x7948C0, bytes=CFFF906803000083, recon38 GameWorld::processUpdateRemovalList
+3516,MainBarGUI,?toggleMapWindow@MainBarGUI@@QEAAXPEAVWidget@MyGUI@@@Z,PROLOGUE 0x7202B0 -> 0x7202B0, bytes=0440BA0200000048, recon38 MainBarGUI::toggleMapWindow
+3517,MainBarGUI,?toggleFactionWindow@MainBarGUI@@QEAAXPEAVWidget@MyGUI@@@Z,PROLOGUE 0x7202C0 -> 0x7202C0, bytes=FF90488D151FADA2, recon38 MainBarGUI::toggleFactionWindow
+3518,MainBarGUI,?toggleTechWindow@MainBarGUI@@QEAAXPEAVWidget@MyGUI@@@Z,PROLOGUE 0x7202D0 -> 0x7202D0, bytes=FF15E259B201488B, recon38 MainBarGUI::toggleTechWindow
+3519,MainBarGUI,?toggleCraftWindow@MainBarGUI@@QEAAXPEAVWidget@MyGUI@@@Z,PROLOGUE 0x7202E0 -> 0x7202E0, bytes=B201488BC8488D15, recon38 MainBarGUI::toggleCraftWindow
+3520,MainBarGUI,?toggleSquadWindow@MainBarGUI@@QEAAXPEAVWidget@MyGUI@@@Z,PROLOGUE 0x7202F0 -> 0x7202F0, bytes=B201488BF8488D15, recon38 MainBarGUI::toggleSquadWindow
+3542,MainBarGUI,?toggleInventory@MainBarGUI@@QEAAXPEAVWidget@MyGUI@@@Z,PROLOGUE 0x723D90 -> 0x723D90, bytes=01000048C1E103E8, recon38 MainBarGUI::toggleInventory
+3543,MainBarGUI,?toggleStatsWindow@MainBarGUI@@QEAAXPEAVWidget@MyGUI@@@Z,PROLOGUE 0x720550 -> 0x720550, bytes=498B004983C00849, recon38 MainBarGUI::toggleStatsWindow
+3602,MapScreen,?getVisible@MapScreen@@QEBA_NXZ,PROLOGUE 0x48B1E0 -> 0x48B1E0, bytes=00488BCFFF15FEB9, recon38 MapScreen::getVisible
+3604,MapScreen,?clearTempMarkers@MapScreen@@QEAAXXZ,NEAR 0x48B7A0 -> 0x48B280, bytes=BC511F0148894500, recon38 MapScreen::clearTempMarkers
+3605,MapScreen,?refresh@MapScreen@@QEAAXXZ,PROLOGUE 0x49A2E0 -> 0x49A2E0, bytes=00000033DB48891D, recon38 MapScreen::refresh
+3608,MapScreen,?removeSquad@MapScreen@@QEAAXPEAVPlatoon@@@Z,INSIDE 0x48E230 -> 0x48E460, bytes=8B4F30FF159783DB, recon38 MapScreen::removeSquad
+3609,MapScreen,?hide@MapScreen@@QEAAXXZ,INSIDE 0x48E230 -> 0x48E490, bytes=0CE32401488D4D80, recon38 MapScreen::hide
+3610,MapScreen,?setMovementMarker@MapScreen@@QEAAXAEBVVector3@Ogre@@M@Z,NEAR 0x48B7A0 -> 0x48B2A0, bytes=C94533C0488D5508, recon38 MapScreen::setMovementMarker
+3611,MapScreen,?showRoads@MapScreen@@QEAAX_N@Z,INSIDE 0x492E10 -> 0x492D70, bytes=0000FF15F01DDB01, recon38 MapScreen::showRoads
+3612,MapScreen,?updatePlayerTownMapMarker@MapScreen@@QEAAXAEBVhand@@@Z,PROLOGUE 0x4C3A50 -> 0x4C3A50, bytes=33C04084FF0F84B3, recon38 MapScreen::updatePlayerTownMapMarker
+3613,MapScreen,?updateZoom@MapScreen@@QEAAXXZ,INSIDE 0x490210 -> 0x4905F0, bytes=4C2478E809D2BBFF, recon38 MapScreen::updateZoom
+3615,MapScreen,?refreshTowns@MapScreen@@QEAAXXZ,PROLOGUE 0x490A80 -> 0x490A80, bytes=0000F30F11742430, recon38 MapScreen::refreshTowns
+3616,MapScreen,?refreshSquads@MapScreen@@QEAAXXZ,PROLOGUE 0x4981C0 -> 0x4981C0, bytes=00008944243848C7, recon38 MapScreen::refreshSquads
+3617,MapScreen,?updateCharacterMarker@MapScreen@@QEAAXPEAVRootObjectBase@@@Z,INSIDE 0x492E10 -> 0x492E50, bytes=8D0DA2779A017404, recon38 MapScreen::updateCharacterMarker
+3618,MapScreen,?getMouseWorldPosition@MapScreen@@QEAA_NAEAVVector3@Ogre@@@Z,PROLOGUE 0x48C2F0 -> 0x48C2F0, bytes=8BCBFF90F0020000, recon38 MapScreen::getMouseWorldPosition
+3622,MapScreen,?mapMousePressed@MapScreen@@QEAAXPEAVWidget@MyGUI@@HHUMouseButton@3@@Z,PROLOGUE 0x48B200 -> 0x48B200, bytes=FF15EAB9DB01488B, recon38 MapScreen::mapMousePressed
+3625,MapScreen,?updateRoads@MapScreen@@QEAAXXZ,INSIDE 0x48E230 -> 0x48E250, bytes=488B057191C80148, recon38 MapScreen::updateRoads
+3626,MapScreen,?centerButton@MapScreen@@QEAAXPEAVWidget@MyGUI@@@Z,PROLOGUE 0x48C2A0 -> 0x48C2A0, bytes=8BF6448BEE448BE6, recon38 MapScreen::centerButton
+3629,MapScreen,?getMarkerColor@MapScreen@@SAAEBUColour@MyGUI@@PEAVRootObjectBase@@@Z,INSIDE 0x48E230 -> 0x48E6A0, bytes=15EBE02401488D4D, recon38 MapScreen::getMarkerColor
+3938,NewGameWindow,?setVisible@NewGameWindow@@QEAAX_N@Z,PROLOGUE 0x915BA0 -> 0x915BA0, bytes=0000004C8965F0C6, recon38 NewGameWindow::setVisible
+3946,NewGameWindow,?updateCurrentData@NewGameWindow@@QEAAXXZ,PROLOGUE 0x915330 -> 0x915330, bytes=488BCFE871FE6FFF, recon38 NewGameWindow::updateCurrentData
+3948,NewGameWindow,?prevStart@NewGameWindow@@QEAAXPEAVWidget@MyGUI@@@Z,PROLOGUE 0x915AC0 -> 0x915AC0, bytes=FF90488D0DC7DA81, recon38 NewGameWindow::prevStart
+3949,NewGameWindow,?nextStart@NewGameWindow@@QEAAXPEAVWidget@MyGUI@@@Z,PROLOGUE 0x915B30 -> 0x915B30, bytes=7209488B4D90E8BD, recon38 NewGameWindow::nextStart
+5181,TitleScreen,?getSingleton@TitleScreen@@SAPEAV1@XZ,INSIDE 0x911BD0 -> 0x911EB0, bytes=488BDF807F290075, recon38 TitleScreen::getSingleton
+5184,TitleScreen,?_NV_clear@TitleScreen@@QEAAXXZ,VTABLE 0x3E527 -> 0x911F10, bytes=807E290075306666, recon38 TitleScreen::_NV_clear
+5185,TitleScreen,?_NV_show@TitleScreen@@QEAAX_N@Z,VTABLE 0x17562 -> 0x911F60, bytes=3BDF74684C8BC380, recon38 TitleScreen::_NV_show
+5191,TitleScreen,?credits@TitleScreen@@QEAAXPEAVWidget@MyGUI@@@Z,PROLOGUE 0x914210 -> 0x914210, bytes=00488B742460488B, recon38 TitleScreen::credits
+5192,TitleScreen,?exitGame@TitleScreen@@QEAAXPEAVWidget@MyGUI@@@Z,PROLOGUE 0x914260 -> 0x914260, bytes=4833C4488945170F, recon38 TitleScreen::exitGame
+5194,TitleScreen,?hover@TitleScreen@@QEAAXPEAVWidget@MyGUI@@0@Z,INSIDE 0x911BD0 -> 0x911F20, bytes=488B5310488D4DDF, recon38 TitleScreen::hover
+
+Skipped:
+3515,MainBarGUI,?closeMapWindow@MainBarGUI@@QEAAXPEAVWidget@MyGUI@@@Z,0x4A70E0,no function at/containing candidate
+3603,MapScreen,?centerCamera@MapScreen@@QEAAXXZ,0x48BF80,no function at/containing candidate
+
+Status breakdown:
+INSIDE: 2898
+VTABLE: 1133
+NEAR: 734
+RESOLVED: 415
+EXACT: 285
+REFINED: 163
+UNRESOLVED: 161
+ORDERED: 109
+PROLOGUE: 54
+RECOVERED: 16
+PRED: 5
+
+Unresolved remaining: 161
+BR non-zero entries: 5812

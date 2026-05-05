@@ -1,0 +1,59 @@
+Phase 4c collision tiebreak
+
+0x9B1070: winner=9 'AABB2D::intersects(const class Ogre::Vector3 &, const class Ogre::Vector3 &);'  reason='WINNER=1'
+0x9B1370: winner=10 'AABB2D::intersects2(const class Ogre::Vector2 &, const class Ogre::Vector2 &);'  reason='WINNER=1'
+0x791FF0: winner=793 'Character::destinationInsideWalls(class RootObject *);'  reason='WINNER=2'
+0x962A0: winner=285 '?_DESTRUCTOR@DataRangePose@AppearanceManager@@QEAAXXZ'  reason='WINNER=3'
+0x8536E0: winner=323 'BountyManager::_getHighestBountyFaction();'  reason='WINNER=1'
+0x850E90: winner=4917 'SensoryData::setupMyProgressBar(const class hand &);'  reason='WINNER=3'
+0x548750: winner=372 '?_NV_isPublic@Building@@QEBA_NXZ'  reason='WINNER=1'
+0x4D3A20: winner=4415 'PreviewBuilding::getPlacementResultMaterialName(enum PreviewBuilding::PlacementResult);'  reason='WINNER=2'
+0x4F4D50: winner=4507 'PreviewBuilding::FootprintNode::operator=(const class PreviewBuilding::FootprintNode &);'  reason='WINNER=2'
+0x65DC30: winner=1153 'CharMovement::getRadius();'  reason='WINNER=2'
+0x684D70: winner=821 'Character::sendDialogEventOverride(class Character *, enum EventTriggerEnum, bool);'  reason='WINNER=1'
+0x67FAB0: winner=1758 'Dialogue::addDialoguePackage(class GameData *);'  reason='WINNER=2'
+0x670ED0: unsure (WINNER=0)
+0x595900: unsure (WINNER=0)
+0x5C6B30: winner=1138 'CharBody::_patrol(class Tasker *, int, class Ogre::Vector3, class PatrolInfo *, class AITaskSytem *, class TownBase *);'  reason='WINNER=1'
+0x2AE2E0: winner=1179 'CharMovement::setLookatTarget(const class hand &);'  reason='WINNER=2'
+0x889990: winner=1230 'CharStats::getStatMultiplierForGUI(enum StatsEnumerated);'  reason='WINNER=1'
+0x883BA0: winner=1272 'CharStats::getAttackCuttingDamage();'  reason='WINNER=1'
+0x2ADF10: unsure (WINNER=0)
+0x60B9A0: winner=1396 '?_CONSTRUCTOR@AttackSlotManager@CombatClass@@QEAAPEAV12@PEAVCharacter@@PEAV2@@Z'  reason='WINNER=2'
+0x6648B0: unsure (WINNER=0)
+0x665CF0: winner=1373 'CombatClass::_isAttackingUpdate();'  reason='WINNER=1'
+0x60A2F0: winner=1381 'CombatClass::attackImpactCheck();'  reason='WINNER=1'
+0x6F5730: winner=1818 '?_DESTRUCTOR@RepetitionCounter@Dialogue@@QEAAXXZ'  reason='WINNER=2'
+0x721640: winner=4100 'OrdersPanel::passiveButtonCallback(class MyGUI::Widget *);'  reason='WINNER=3'
+0x337A10: winner=1877 'DoorStuff::getDoorState();'  reason='WINNER=1'
+0x14D090: winner=1896 '?_DESTRUCTOR@EdgeCache@@QEAAXXZ'  reason='WINNER=1'
+0x7F3880: winner=4321 'PlayerInterface::setOrderSelectedCharacters(enum MessageForB::StandingOrder);'  reason='WINNER=2'
+0x36B230: winner=5919 'ZoneManager::activateAllActiveZones();'  reason='WINNER=2'
+0x7F5000: winner=1923 'Faction::getDefaultDivision();'  reason='WINNER=1'
+0x7F3240: winner=1959 'Faction::deactivatePlatoon(class Platoon *);'  reason='WINNER=1'
+0x7F3720: winner=4318 'PlayerInterface::toggleLevelEditorOnSelectedTown();'  reason='WINNER=2'
+0x2DD390: winner=4569 'ProsperityManager::update(float);'  reason='WINNER=3'
+0x48B7A0: winner=2047 'FactionsScreen::FactionRelationsLine::LessSort::operator()(const class FactionsScreen::FactionRelationsLine *, const class FactionsScreen::FactionRelationsLine *);'  reason='WINNER=2'
+0x493D80: winner=5008 '?_CONSTRUCTOR@PortraitSquadCellView@SquadManagementScreen@@QEAAPEAV12@PEAVWidget@MyGUI@@@Z'  reason='WINNER=2'
+0x3E81A0: winner=2209 'ForgottenGUI::changeFontSize();'  reason='WINNER=1'
+0x479F90: winner=3475 'LoadSaveWindow::getWidget();'  reason='WINNER=2'
+0x7EAF90: unsure (WINNER=0)
+0x2D5740: winner=2376 'GameData::findInList(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);'  reason='WINNER=1'
+0x6BC310: winner=2451 '?_CONSTRUCTOR@GameDataHeader@@QEAAPEAV1@XZ'  reason='WINNER=2'
+0xD5EA0: winner=2571 '?_DESTRUCTOR@GameSaveState@@QEAAXXZ'  reason='WINNER=1'
+0x723EE0: winner=4069 'OrderCellView::update(const struct MyGUI::IBDrawItemInfo &, class OrderData *);'  reason='WINNER=2'
+0x7206B0: unsure (WINNER=0)
+0x70E860: winner=3172 'InventoryGUI::getSectionWithMouseLocal();'  reason='WINNER=1'
+0x412190: winner=4392 'PortraitMainCellView::resize(int);'  reason='WINNER=2'
+0x49A4C0: winner=3567 'ManagementScreen::refreshResearchList();'  reason='WINNER=1'
+0x48CD10: winner=3614 'MapScreen::updateCameraMarker();'  reason='WINNER=2'
+0x48A6A0: unsure (WINNER=0)
+0x411C30: unsure (WINNER=0)
+0x3B2B40: unsure (WINNER=0)
+0x245680: unsure (WINNER=0)
+0x4EBCE0: winner=4484 'PreviewBuilding::Footprint::getValid();'  reason='WINNER=3'
+0x7F4BA0: winner=4331 'PlayerInterface::getNearestSelectedCharacterTo(const class Ogre::Vector3 &);'  reason='WINNER=1'
+0x4139B0: winner=4401 'PortraitManager::getPortrait(const class hand &);'  reason='WINNER=2'
+0x448230: winner=4628 'ResourceLoader::updateBT();'  reason='WINNER=1'
+0xA0AA80: winner=5894 'ZoneManager::deactivateZoneMap(class ZoneMap *, bool);'  reason='WINNER=1'
+0xA090F0: winner=5942 'ZoneMap::initialise();'  reason='WINNER=2'
